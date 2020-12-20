@@ -117,7 +117,6 @@ function generatePassword() {
     randomIndices = getIndices(guaranteedCharacters, result);
     for (var i = 0; i < guaranteedCharacters.length; i++) {
         result[ randomIndices[i] ] = guaranteedCharacters[i];
-        console.log( randomIndices[i] );
     }
 
     // Transform the result into a string and pass into writePassword
